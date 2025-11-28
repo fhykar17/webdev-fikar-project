@@ -26,22 +26,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     });
 
-    // Popup Notification celeng push git
-    function showPopup() {
-    const popup = document.getElementById("popupNotif");
-    popup.classList.add("show");
+    const smokeBtn = document.getElementById('smokeBtn');
+    const smokeOverlay = document.getElementById('smokeOverlay');
 
-    // sembunyikan otomatis setelah 3 detik
+    smokeBtn.addEventListener('click', () => {
+    // tampilkan overlay
+    smokeOverlay.style.display = 'block';
+
+    // hilangkan setelah 3 detik
     setTimeout(() => {
-        popup.classList.remove("show");
+        smokeOverlay.style.display = 'none';
     }, 3000);
-    }
-
-    // Jalankan ketika tombol diklik
-    document.addEventListener("DOMContentLoaded", () => {
-        const btnPopup = document.getElementById("btnPopup");
-        btnPopup.addEventListener("click", showPopup);
     });
+
 
 
 });
