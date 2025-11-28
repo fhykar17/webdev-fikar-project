@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     });
 
+    // efek asap di body
     const smokeBtn = document.getElementById('smokeBtn');
     const smokeOverlay = document.getElementById('smokeOverlay');
 
