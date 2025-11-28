@@ -1,0 +1,296 @@
+/* 1. TAMPILAN KESELURUHAN */
+
+* {
+    box-sizing: border-box; /* Semua elemen menghitung lebar & tinggi termasuk padding dan border */
+    margin: 0; /* Menghapus jarak default semua elemen */
+    padding: 0; /* Menghapus padding default semua elemen */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Mengatur font utama */
+    background-color: #fafafa; /* Warna latar belakang halaman secara keseluruhan */
+    color: #333333; /* Warna teks utama */
+    line-height: 1.5; /* Jarak antarbaris teks agar mudah dibaca */
+}
+
+/* 2. HEADER */
+
+.foto-profil {
+    width: 150px; /* Lebar foto */
+    height: 150px; /* Tinggi foto sama agar proporsional */
+    border-radius: 50%; /* Membuat bentuk bulat seperti profil */
+    object-fit: cover; /* Menjaga foto tetap terpotong rapi tanpa melebar */
+    border: 4px solid #ffffff; /* Garis putih mengelilingi foto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut di sekitar foto */
+    display: block; /* Menjadikan foto elemen blok agar bisa diatur posisi */
+    margin-left: auto; /* Menengahkannya secara horizontal */
+    margin-right: auto; /* Menengahkannya secara horizontal */
+    margin-bottom: 15px; /* Jarak bawah antara foto dan teks nama */
+}
+
+
+header {
+    background-color: #b00020; /* Warna latar belakang merah maroon */
+    background-image: url(bg1.png);
+    background-size: cover; /* Agar gambar menyesuaikan area */
+    background-position: center; /* Pusat gambar */
+    color: #ffffff; /* Warna teks putih */
+    text-align: center; /* Semua teks di tengah */
+    padding-top: 30px; /* Ruang atas 30px */
+    padding-bottom: 30px; /* Ruang bawah 30px */
+}
+
+header h1 {
+    font-size: 2.5em; /* Ukuran besar untuk nama utama */
+    margin-bottom: 10px; /* Jarak bawah antara h1 dan paragraf */
+}
+
+header p {
+    font-size: 1.2em; /* Ukuran teks deskripsi profesi */
+}
+
+/* 3. NAVIGASI */
+
+nav {
+    background-color: #f8d7da; /* Warna latar lembut merah muda */
+    padding-top: 10px; /* Jarak atas */
+    padding-bottom: 10px; /* Jarak bawah */
+}
+
+nav ul li a {
+    color: #b00020; /* Warna teks merah maroon */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-weight: bold; /* Membuat teks tebal */
+    font-size: 1em; /* Ukuran teks menu */
+}
+
+nav ul li a:hover {
+    color: #333333; /* Warna berubah jadi abu gelap saat diarahkan kursor */
+}
+
+/* 4. BAGIAN TENTANG SAYA */
+
+section#tentang {
+    background-color: #ffffff; /* Warna latar putih */
+    width: 90%; /* Lebar 90% dari layar */
+    max-width: 800px; /* Tidak lebih lebar dari 800px */
+    margin: 30px auto; /* Tengah horizontal dengan jarak vertikal */
+    padding: 30px; /* Ruang dalam */
+    border-radius: 10px; /* Sudut lembut */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut di sekitar kotak */
+}
+
+section#tentang h2 {
+    color: #b00020; /* Warna judul merah maroon */
+    margin-bottom: 15px; /* Jarak bawah antara judul dan isi */
+    border-bottom: 3px solid #b00020; /* Garis bawah merah untuk mempertegas judul */
+    display: inline-block; /* Garis bawah hanya sepanjang teks */
+    padding-bottom: 5px; /* Jarak kecil antara teks dan garis bawah */
+    font-size: 1.5em; /* Ukuran font judul tentang saya */
+}
+
+section#tentang p {
+    margin-bottom: 20px; /* Jarak bawah antar paragraf */
+    text-align: justify; /* Rata kiri-kanan agar teks rapi */
+    font-size: 1em; /* Ukuran font paragraf tentang saya */
+}
+
+/* Bagian aside: link media sosial */
+
+aside {
+    background-color: #fff5f5; /* Latar lembut merah muda */
+    border-left: 5px solid #b00020; /* Garis tebal di kiri warna maroon */
+    padding: 15px; /* Ruang dalam */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+aside h3 {
+    margin-bottom: 10px; /* Jarak bawah antara judul dan daftar */
+    color: #b00020; /* Warna judul */
+    font-size: 1.3em; /* Ukuran font judul ikuti saya */
+}
+
+aside ul {
+    list-style-type: none; /* Menghapus bullet */
+    display: flex; /* Menyusun ikon secara horizontal */
+    gap: 15px; /* Jarak antar ikon */
+}
+
+aside ul li a {
+    color: #b00020; /* Warna ikon */
+    font-size: 1.5em; /* Ukuran ikon */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+aside ul li a:hover {
+    color: #333333; /* Warna berubah jadi abu saat diarahkan kursor */
+}
+
+/* 5. BAGIAN KEAHLIAN */
+
+section#keahlian {
+    background-color: #ffffff; /* Latar belakang putih */
+    width: 90%; /* Lebar kontainer 90% */
+    max-width: 800px; /* Maksimal 800px */
+    margin: 30px auto; /* Tengah dengan jarak 30px atas bawah */
+    padding: 30px; /* Ruang dalam */
+    border-radius: 10px; /* Sudut lembut */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+section#keahlian h2 {
+    color: #b00020; /* Warna judul merah maroon */
+    margin-bottom: 15px; /* Jarak bawah antara judul dan isi */
+    border-bottom: 3px solid #b00020; /* Garis bawah merah */
+    display: inline-block; /* Garis bawah sepanjang teks */
+    padding-bottom: 5px; /* Jarak kecil antara teks dan garis bawah */
+    font-size: 1.5em; /* Ukuran font judul keahlian */
+}
+
+article {
+    margin-bottom: 20px; /* Jarak antar artikel */
+    padding: 15px; /* Ruang dalam */
+    border: 1px solid #dddddd; /* Garis tipis abu muda */
+    border-radius: 8px; /* Sudut lembut */
+    background-color: #fff9f9; /* Latar merah muda lembut */
+    font-size: 1em; /* Ukuran font artikel dan judul */
+}
+
+article h3 {
+    color: #b00020; /* Warna judul keahlian */
+    margin-bottom: 6px; /* Jarak bawah antara judul dan isi */
+    font-size: 1.3em; /* Ukuran artikel h3 judul */
+}
+
+article p {
+    text-align: none; /* Rata kiri-kanan agar rapi */
+    font-size: 1em; /* Ukuran artikel paragraf */
+}
+
+/* 6. FOOTER */
+
+footer {
+    background-color: #b00020; /* Latar merah maroon */
+    color: #ffffff; /* Teks putih */
+    text-align: center; /* Semua teks di tengah */
+    padding-top: 25px; /* Jarak atas */
+    padding-bottom: 25px; /* Jarak bawah */
+    margin-top: 40px; /* Jarak antara footer dan konten atasnya */
+    font-size: 1em;
+}
+
+footer a {
+    color: #ffffff; /* Warna tautan putih */
+    text-decoration: underline; /* Garis bawah untuk menandakan hyperlink */
+    font-size: 1em;
+}
+
+footer a:hover {
+    color: #333333; /* Warna berubah menjadi abu saat diarahkan kursor */
+}
+
+/* Flexbox untuk navigasi */
+nav ul {
+    list-style-type: none; /* Menghapus bullet bawaan daftar */
+    display: flex; /* Menyusun item menu secara horizontal */
+    justify-content: center; /* Memposisikan menu di tengah */
+    align-items: center; /* Meratakan vertikal */
+    gap: 20px; /* Jarak antar item menu */
+}
+
+/* FLEXBOX untuk Header */
+header {
+    display: flex; /* aktifkan flexbox di header */
+    flex-direction: column; /* elemen diatur ke bawah (vertikal) */
+    justify-content: center; /* posisi tengah vertikal */
+    align-items: center; /* posisi tengah horizontal */
+}
+
+
+/* GRID untuk Struktur Utama */
+.container {
+    display: grid; /* aktifkan grid */
+    grid-template-columns: 1fr 1fr; /* dua kolom seimbang */
+    gap: 30px; /* jarak antar kolom */
+    width: 90%;
+    margin: 0 auto; /* rata tengah halaman */
+}
+
+/* GRID untuk Keahlian */
+.grid-keahlian {
+    display: grid; /* aktifkan grid */
+    grid-template-columns: repeat(3, 1fr); /* buat 3 kolom sama besar */
+    gap: 20px; /* jarak antar kotak keahlian */
+}
+
+/* Kotak dalam grid */
+.grid-keahlian article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* 7. RESPONSIVE DESIGN UNTUK MOBILE */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* ubah jadi satu kolom */
+    }
+
+    .grid-keahlian {
+        grid-template-columns: 1fr; /* ubah keahlian jadi 1 kolom */
+    }
+
+    nav ul {
+        flex-direction: column; /* menu vertikal di layar kecil */
+        align-items: center; /* menu tetap di tengah */
+        gap: 10px;
+    }
+}
+
+.dark-mode {
+  background-color: #610101bb;
+  color: white;
+}
+
+.dark-mode p {
+    color: black !important;
+}
+
+.dark-mode article p{
+    color: black !important;
+}
+
+.grid-keahlian {
+    display: grid;
+    grid-template-columns: 1fr;  /* MOBILE FIRST */
+    gap: 20px;
+}
+
+
+/*🖥️  RESPONSIVE BREAKPOINTS */
+
+/* Tablet (≥ 768px) */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* 2 kolom di tablet */
+    }
+
+    .grid-keahlian {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom keahlian */
+    }
+}
+
+/* Laptop & Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .grid-keahlian {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom keahlian */
+    }
+}
