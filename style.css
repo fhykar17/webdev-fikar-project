@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: auto;
+
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+    padding: 10px;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+/* VIDEO BG*/
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(0.8);
+}
+
+/* CHALLENGE 3*/
+header {
+    background-color: rgb(255, 0, 0, 0.2);
+
+    text-align: center;
+    padding: 60px;
+    border-radius: 8px;
+    h1 {
+        color: #ddd;
+    }
+    p {
+        color: #ffffff;
+    }
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 1em;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.8);
+    background: blur(8px);
+
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    figcaption {
+        color: #ffffff;
+    }
+    flex: 2;
+}
+
+/* CHALLENGE 4*/
+article:hover {
+    background-color: #260505;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(4, 48, 38, 0.3);
+    color: #ddd;
+    h2 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    
+    
+}
+
+aside {
+    flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-container .item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0,);
+    text-align: center;
+}
+
+/* CHALLENGE 4*/
+.grid-container .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(4, 48, 38, 0.3);
+    background-color: var(--color-primary-accent);
+    color: var(--color-background-dark);
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        flex-direction: column;
+    }
+}
+@media (min-width:768px) {
+    main {
+        flex-direction: row;
+    }
+}
+@media (min-width:1200px) {
+    main {
+        max-width: 1200;
+        margin: auto;
+    }
+    body {
+        font-size: 18px;
+
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/* CHALLENGE 5*/
+@media (max-width:480px) {
+    body {
+        background-color: #ffafaf;
+    }
+}
+
+nav {
+    transform: 0.3 ease;
+}
+
+nav.show-nav {
+    opacity: 1;
+    pointer-events: auto;
+}
+nav {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body.dark {
+    background-color: #260505;
+    color: #ddd;
+}
+
+body.dark nav a {
+    color: #ffafaf;
+}
+
+.nav-besar {
+    font-size: 22px;
+}
